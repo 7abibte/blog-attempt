@@ -1,0 +1,333 @@
+body {
+    font-family: 'quicksand light', sans-serif;
+    font-size: 18px;
+    color: #717077;
+}
+
+h1 {
+    font-family: 'La Belle Aurore', cursive;
+    color: #E59985;
+    font-size: 90px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'cinzel', serif;
+    font-size: 34px;
+    
+}
+
+h3 {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 40px;
+}
+
+h4 {
+    font-family: 'cinzel', serif;
+    font-size: 16px;
+    color: #E59985;
+    text-shadow: 1px 1px 1px #C1B5B4;
+}
+
+h5 {
+    font-size: 20px;
+    margin-top: 35px;
+    width: 40%;
+    text-align: center;
+    background-color: #37818F;
+    padding: 10px;
+    border: 1px solid #717077;
+    color: #ffffff;
+}
+
+h6 {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 45px;
+    color: #E59985;
+    margin: 25px 0 0 0;
+    letter-spacing: 3px;
+    font-weight: lighter; 
+}
+
+p {
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: #717077;
+}
+
+h1 a {
+    color: #E59985;
+    
+}
+
+h5 a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #717077;
+    font-weight: bold;
+    text-decoration: underline; 
+    text-shadow: 2px 3px 4px #DDCECD;
+}
+
+h1 a:hover {
+    text-decoration: none;
+    font-weight: lighter; 
+    color: #E59985;
+}
+
+h3 a:hover {
+    text-decoration: none;
+}
+
+h5 a:hover {
+    text-decoration: none;
+    text-shadow: 0.15px 0 1px; 
+    color: #ffffff;
+}
+
+
+/*** Nav Alignment ***/
+
+header {
+    margin-top: 10px;
+    line-height: 65px; 
+}
+
+header h1 {
+    margin: 0px;
+}
+
+.nav-logo {
+    float: left;
+    margin: 0;
+    width: 15%;
+    text-align: right;
+    font-size: 55px;
+    line-height: 75px;
+}
+
+ul {
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 70%;
+    text-align: center;
+    list-style-type: none;
+}
+
+
+li {
+    display: inline;
+    padding: 0 25px 0 25px;
+    position: relative;
+}
+
+
+.nav-contact {
+    width: 15%;
+    float: right; 
+    word-spacing: 10px;
+}
+
+
+/*** Body ***/
+
+main { 
+    clear:both;
+}
+
+/*** Welcome Screen ***/
+
+.welcome {
+    text-align: center;
+    clear: both;
+}
+
+.welcome img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 35px;
+}
+
+.welcome h1 {
+    margin: 20px 0 ;
+}
+
+.welcome p {
+    font-size: 20px;
+    margin: 0 20% 95px 20%;
+}
+
+/*** Post Sections ***/
+
+.post {
+    clear: both;
+}
+
+.post h2 {
+    margin: 75px 0 45px 0;
+    margin-left: 10%;
+    clear: left;
+}
+
+.post-container {
+    margin-left: 10%;
+    margin-right: 1%;
+    clear: both;
+}
+
+.post-column {
+    width: 29%;
+    float: left;
+    padding-right: 1.5%;
+    margin-bottom: 45px;
+}
+
+.post-column img {
+    width: 100%;
+}
+
+.post-column h3 {
+    margin: 5px 0;
+}
+
+.post-column h4 {
+    margin: 0;
+}
+
+#buttons {
+    clear: both;
+    margin-left: 10%;
+    margin-right: 1%;
+    margin-bottom: 105px;
+}
+
+#buttons h5 {
+    width: 13%;
+    float: left;
+    margin-top: 0;
+    margin-right: 16%;
+}
+
+/*** At a Glance ***/
+
+.glance-container {
+    margin-left: 9%;
+    margin-bottom: 95px;
+}
+.glance-container img{
+    width: 21%;  
+    padding-left: 1%;
+    padding-bottom: 1%;
+}
+
+/*** About Us ***/
+
+.about {
+    clear: both;
+}
+
+.about h1 {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.about img {
+    width: 30%;
+    margin-left: 10%;
+}
+
+.about h2 {
+    margin: 0px;
+    font-family: "La Belle Aurore", cursive;
+    font-size: 38px;
+    text-shadow: none;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+.about-text {
+    width: 45%;
+    float:right;
+    margin-right: 10%;
+    margin-bottom: 75px;
+}
+
+/*** Footer ***/
+
+footer {
+    clear: both;
+    line-height: 65px;
+    height: 65px;
+    margin-bottom: 0;
+}
+
+
+/*** About Page ***/
+
+#about-page h1 {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 45px;
+    text-align: left;
+    line-height: 145%;
+    padding-bottom: 25px;
+    margin-top: 55px;
+    letter-spacing: 3px;
+}
+
+.post-page {
+    margin: 0 15% 5% 15%; 
+}
+
+.post-page h1 {
+    font-size: 65px; 
+    text-shadow: none;
+    text-align: left;
+    margin: 0;
+}
+
+.post-page h2 {
+    font-size: 25px;
+    margin-top: 55px;
+}
+
+.post-page h4 {
+    margin: 0 0 35px 0;
+    color: #717077;
+    text-shadow: none; 
+}
+
+.post-page p {
+    line-height: 35px;
+}
+
+.post-page ul {
+    float: none;
+    text-align: left;
+    list-style: square inside;
+}
+
+.post-page li {
+    display: list-item;
+    padding: 12px 0 0 35px;
+}
+
+.post-page img {
+    width: 70%;
+    display: block;
+    margin: 35px auto;
+}
+
+#a-bientot-img {
+    width: 10%;
+    margin: 0;
+    border-radius: 50px;
+    
+}
