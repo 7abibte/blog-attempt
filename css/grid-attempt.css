@@ -1,0 +1,56 @@
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'quicksand light', sans-serif;
+    font-size: 1em;
+    color: #717077;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    height: 100%;
+}
+
+.container-glance {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+    
+}
+
+.grid-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.grid-row img {
+    width: 45%;
+    height: auto;
+    padding: 1em 0;
+}
+
+
+@media (min-width: 768px) {
+    .grid-row {
+        justify-content: center;
+    }
+    
+    .grid-row img {
+        width: 30%;
+        padding: 0.5em 0.5em 
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid-row img {
+        width: 22%
+    }
+}
+
+
+    
