@@ -29,7 +29,7 @@ body {
 h1 {
     font-family: 'La Belle Aurore', cursive;
     color: #E59985;
-    font-size: 5em;
+    font-size: 4em;
     font-weight: lighter;
     text-align: center;
     line-height: 1em;
@@ -115,6 +115,9 @@ h5 a:hover {
     color: #ffffff;
 }
 
+p {
+    text-align: justify;
+}
 
 /*** Nav Alignment ***/
 
@@ -126,11 +129,14 @@ header {
     align-items: center;
     flex-flow: row wrap;
     width: 100%;
+    margin-bottom: 1em;
 }
 
 header h1 {
     margin: 0;
     width: 100%;
+    font-size: 55px;
+    line-height: 75px;
 }
 
 header nav {
@@ -139,27 +145,21 @@ header nav {
     text-align: center;
 }
 
-.nav-logo {
-    margin: 0;
-    font-size: 55px;
-    line-height: 75px;
-}
-
 header nav ul {
     padding: 0;
-    margin: 0;
+    margin: 0 0 0.5em 0;
     text-align: center;
     list-style-type: none;
 }
-
 
 li {
     padding: 0.4em;
 }
 
-
 header nav img {
     padding: 0.7em;
+    height: 1em;
+    width: auto;
 }
 
 
@@ -190,9 +190,13 @@ header nav img {
 
 /*** Post Sections ***/
 
+.posts {
+    margin-bottom: 2em;
+}
+
 .post-container {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -232,54 +236,22 @@ header nav img {
     margin: 1em 0 2em 0;
 }
 
-
-
-
-/*
-.post-column {
-    width: 29%;
-    float: left;
-    padding-right: 1.5%;
-    margin-bottom: 45px;
+.tablet-buttons {
+    display: none;
 }
 
-.post-column img {
-    width: 100%;
+.desktop-buttons {
+    display: none;
 }
-
-.post-column h3 {
-    margin: 5px 0;
-}
-
-.post-column h4 {
-    margin: 0;
-}
-
-#buttons {
-    clear: both;
-    margin-left: 10%;
-    margin-right: 1%;
-    margin-bottom: 105px;
-}
-
-#buttons h5 {
-    width: 13%;
-    float: left;
-    margin-top: 0;
-    margin-right: 16%;
-}
-*/
 
 /*** At a Glance ***/
 
-
-
-
 .grid-row {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 3em;
 }
 
 .grid-row img {
@@ -288,19 +260,6 @@ header nav img {
     padding: 0.5em 0;
 }
 
-/******
-
-.glance-container {
-    margin-left: 9%;
-    margin-bottom: 95px;
-}
-.glance-container img{
-    width: 21%;  
-    padding-left: 1%;
-    padding-bottom: 1%;
-}
-
-*****/
 
 /*** About Us ***/
 
@@ -317,14 +276,13 @@ header nav img {
     text-align: center;
     margin: 35px 0;
     width: 100%;
-    font-size: 4em;
 }
 
 .about img {
     width: 100%;
 }
 
-.about h2 {
+.about-text h2 {
     width: 100%;
     margin: .5em 0 0 0;
     text-align: center;
@@ -336,15 +294,9 @@ header nav img {
     line-height: 1em;
 }
 
-
-
 /*** Footer ***/
 
-footer {
-    line-height: 65px;
-    height: 65px;
-    margin-bottom: 0;
-}
+
 
 
 /*** About Page ***/
@@ -421,7 +373,84 @@ Tablet Media Queries
     
     .grid-row img {
         width: 30%;
-        padding: 0.5em 0.5em 
+        padding: 0.5em 0.5em; 
+    }
+    
+    /*** Nav ***/
+        nav {
+        display: flex;
+        justify-content: center;
+        flex-flow: wrap;
+    }
+    
+    header h1 {
+        width: 100%;
+    }
+    
+    header nav ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .contact {
+        display: none;
+    }
+    
+    /*** Welcome Screen ***/
+    
+     .welcome {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .welcome h1 {
+        width: 100%;
+        height: auto;
+    }
+    
+    .welcome p {
+        width: 70%;
+        text-align: center;
+    }
+    
+    /*** Posts ***/
+    
+    .post-column {
+        justify-content: space-between;
+    }
+    
+    .post-column img {
+        width: 50%;
+        height: auto;
+    }
+    
+    .post-text {
+        width: 45%;
+    }
+    
+    .post-text h3 {
+        margin: 0;
+    }
+
+    .post-text p {
+        font-size: 0.9em;
+    }
+    
+    .post-text h5 {
+        font-size: 0.9em;
+    }
+    
+    .mobile-buttons {
+        display: none;
+    }
+    
+    .tablet-buttons {
+        display: flex;
+        justify-content: center;
     }
     
     /****** About Us ****/
@@ -437,6 +466,10 @@ Tablet Media Queries
         width: auto;
     }
     
+    .about-text h2 {
+        line-height: 2em;
+    }
+    
     .about-text p {
         margin: 0;
     }
@@ -447,12 +480,85 @@ Desktop Media Queries
 =====================================================================*/
 
 @media screen and (min-width: 1200px) {
-    .grid-row img {
-        width: 22%
+    
+    h1 {
+        font-size: 5em;
     }
     
-    .about-large-screen {
+    
+    
+/*** Nav ***/
+    
+    nav {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header h1 {
+        width: auto;
+    }
+    
+    header nav ul {
+        margin: 0;
+        width: 55%;
+    }
+    
+    .contact {
+        display: initial;
+        margin: 0;
+    }
+    /*** Welcome Screen ***/
+   
+    
+    /*** Posts ***/
+    
+    .desktop-posts {
         display: flex;
+        align-items: flex-start;
+    }
+    
+    .post-container {
+        width: 33%;
+        height: auto;
+        margin: 0;
+    }
+    
+    .post-column {
+        justify-content: center;
+    }
+    
+    .post-column img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .post-text {
+        width: 100%;
+        margin: 1em 0 0 0;
+    }
+    
+    .post-container h5 {
+        display: none;
+    }
+    
+    .desktop-buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .desktop-buttons h5 {
+        width: 15%;
+    }
+
+    /*** At a Glande ***/
+    
+    .grid-row img {
+        width: 22%;
+    }
+    
+    /*** About Us ***/
+    
+    .about-large-screen {
         justify-content: space-between; 
     }
     
@@ -462,6 +568,9 @@ Desktop Media Queries
     }
     
     .about-text {
-        width: 50%;
+        width: 55%;
     }
+    
+
+
 }
